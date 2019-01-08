@@ -37,7 +37,7 @@
 					<div class="header-wrap">
 						<div class="header-top d-flex justify-content-between align-items-center">
 								<div class="logo">
-										<a href="#home">Home</a>
+										<a href="#home"></a>
 									</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
@@ -60,7 +60,7 @@
 						<div class="col-lg-10">
 							<div class="generic-banner-content">
 								<h2 class="text-white">Research</h2>
-								<p class="text-white"></p>
+								<p class="text-white">This page shows the related technology to our project.</p>
 							</div>							
 						</div>
 					</div>
@@ -74,29 +74,49 @@
 			<!-- Start About Area -->
 			<section class="about-generic-area pb-10 section-gap">
 				<div class="container border-top-generic">
-					<h3 class="about-title mb-30">Existing Technologies</h3>
+					<h3 class="about-title mb-30">Existing Solutions Review</h3>
 					<div class="row">
 						<div class="col-lg-12">
-							<p>dfsdf</p>
-						</div>
+							<p>Currently, there are not many solutions that directly match our project with both an app and web app, however AR is becoming increasingly more accessible. However, there are
+								apps that are similar as they also use AR to customise rooms and simulate items inside rooms. For example, the IKEA Place App that allows
+							buyers to be able to see how furniture would fit before buying, launched in 2017. IKEA Place uses Apple's ARKit
+							AR platform, allowing users to place "true-to-scale 3D furniture" anywhere [1].<br>
+						One of the main problems the app faced was balancing the size of the models so that the furniture models retained their 
+						texture and detail but didn't crash the app as soon over 4G [2]. Whilst we won't be making our own models, it's something 
+					we've kept in mind as we consider our models.</p>
+					<p>However the app is said to be extended into simulating the experience of walking through IKEA warehouses using AR [2],
+							similar to our project where we simulate rooms via AR and then users will be able to interact with 3D objects
+						inside the room. This however has yet to be implemented, hence we have no exact review of an existing solution. </p>
+					<p>Another app, Figment AR, allows users to superimpose AR portals and emoji models onto the environment [3]. Similar to our project,
+						these AR portals can be placed in rooms that show users different places; these portals can have 360 videos placed inside [4] and proves 
+						to be a useful educational app for youths which we could emulate with our AR portals. However, this app doesn't customise
+						a portal using a web app, and AR portals are preset whereas in our project, the rooms inside the portal will be customisable. 
+					</p>
+							</div>
 						<div class="col-lg-12">
-							<p>sdfdsf</p>
+							
 						</div>
-						
 					</div>
 				</div>
 			</section>
 	
 			<!-- Start Generic Area -->
-			<section class="about-generic-area pb-10 section-gap">
+			<section class="about-generic-area pb-10">
 				<div class="container border-top-generic">
 					<h3 class="about-title mb-30">Related Technologies</h3>
 					<div class="row">
 						<div class="col-lg-12">
-							<p>dfsdf</p>
+							<p>The most widely used and accessible technology for AR apps is Unity; we considered VR in the early stages
+								however when gathering requirements, we found that not many users would have access to
+								VR technology and would render the application useless. As our client suggested, we chose that as our
+								engine to start making our app. In addition, there were different AR SDK that we had to choose between. </p>
 						</div>
 						<div class="col-lg-12">
-							<p>dfsdf</p>
+							<p>3 popular options are ARCore (by Google), ARKit (which is used in the apps in the existing solutions section above), and Vuforia.
+								Our client wanted an Android app, so ARKit was dismissed as an option as it's only for iOS apps.
+								<br> ARCore and Vuforia both support Android. Vuforia uses both ARCore and ARKit if the hardware can support it, 
+							but requires paid versions to publish apps without a watermark. ARCore [5] has motion tracking, plane detection (of even angled surfaces),
+						and light estimation which would be really useful for our app. </p>
 						</div>
 						
 					</div>
@@ -105,29 +125,31 @@
 			<!-- End Generic Start -->		
 
 			<!-- another generic area-->
-			<section class="about-generic-area pb-10 section-gap">
+			<section class="about-generic-area pb-10">
 				<div class="container border-top-generic">
 					<h3 class="about-title mb-30">Summary of Final Decision</h3>
 					<div class="row">
 						<div class="col-lg-12">
-							<p>dfsdf</p>
+							<p>In summary, ARCore had all the functionalities (plane detection etc.) we needed without needing to pay any fees to
+								remove watermarks, and the SDK can be used with Unity.
+
+							</p>
 						</div>
-						<div class="col-lg-12">
-							<p>dfsdf</p>
-						</div>
-						
 					</div>
 				</div>
 			</section>
 
-			<section class="about-generic-area pb-10 section-gap">
+			<section class="about-generic-area pb-10">
 				<div class="container border-top-generic">
 					<h3 class="about-title mb-30">References</h3>
 					<div class="row">
 						<div class="col-lg-12">
-							<p>[1]ref1<br>
-							[2]</p>		
-						</div>
+							<p>[1] "IKEA Place augmented reality app", IKEA Highlights 2017, 2017. [Online]. Available: https://highlights.ikea.com/2017/ikea-place/. [Accessed: 08- Jan- 2019].<br>
+							[2] M. Reynolds, "How IKEA's future-living lab created an augmented reality hit", Wired.co.uk, 2018. [Online]. Available: https://www.wired.co.uk/article/ikea-place-augmented-reality-app-space-10. [Accessed: 08- Jan- 2019].<br>
+							[3]"Figment AR App — Viro Media", Viro Media, 2019. [Online]. Available: https://viromedia.com/figment/. [Accessed: 08- Jan- 2019].<br>
+							[4]"Figment AR: New Features, More Spooky – VR & AR App Development Blog — Viro Media", VR & AR App Development Blog — Viro Media, 2017. [Online]. Available: https://blog.viromedia.com/figment-ar-new-features-more-spooky-ef011a497adf. [Accessed: 08- Jan- 2019].<br>
+							[5]"Google ARCore partner page - Unity", Unity, 2019. [Online]. Available: https://unity3d.com/partners/google/arcore. [Accessed: 08- Jan- 2019].<br>
+						</p></div>
 					</div>
 				</div>
 			</section>
