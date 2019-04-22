@@ -65,7 +65,7 @@
 				<div class="col-lg-10">
 					<div class="generic-banner-content">
 						<h2 class="text-white">Testing</h2>
-						<p class="text-white"></p>
+						<p class="text-white">Here we talk about the tests we carried out as well as user acceptance.</p>
 					</div>
 				</div>
 			</div>
@@ -79,149 +79,167 @@
 		<!-- Start  Area -->
 		<section class="about-generic-area pb-10 ">
 			<div class="container border-top-generic section-gap">
-				<h3 class="about-title mb-30">Tests</h3>
+				<h3 class="about-title mb-30">Test Cases</h3>
 				<div class="row">
 					<div class="col-lg-12">
 						<p>
-								Test 1: Enter valid username and password, click submit.
-								Expected Result: 
-								The user is taken to the user page
-								User ID cookie created
-								Session key cookie created
-								Session key in users.json is updated
+							Our testing strategy was to do manual tests as we found automated tests aren't applicable to our project.
+							Here, we have our test cases:<br>
+
+								Test 1: Enter valid username and password, click submit.<br>
+								Expected Result: <br>
+								The user is taken to the user page<br>
+								User ID cookie created<br>
+								Session key cookie created<br>
+								Session key in users.json is updated<br>
+								Initial Date Passed: 8th Jan<br> <br>
 								
-								Test 2: Enter invalid username and password
-								Expected Result:
-								The user remains on the same page
-								User ID cookie not created
-								Session key cookie not created
-								users.json unchanged
+								Test 2: Enter invalid username and password<br>
+								Expected Result:<br>
+								The user remains on the same page<br>
+								User ID cookie not created<br>
+								Session key cookie not created<br>
+								users.json unchanged<br>
+								Initial Date Passed: 8th Jan<br> <br>
 								
-								Test 3: Navigate to user.php while not logged in
-								Expected Result:
-								The user is transferred to the logout page, then to the login page
+								Test 3: Navigate to user.php while not logged in<br>
+								Expected Result:<br>
+								The user is transferred to the logout page, then to the login page<br>
+								Initial Date Passed: 8th Jan -> retested when we moved to the 3D editor<br> <br>
 								
-								Test 4: Navigate to editor.php while not logged in
-								Expected Result:
-								The user is transferred to the logout page, then to the login page
+								Test 4: Navigate to editor.php while not logged in<br>
+								Expected Result:<br>
+								The user is transferred to the logout page, then to the login page<br>
+								Initial Date Passed: 8th Jan<br> <br>
 								
-								Test 5: Navigate to user.php with invalid cookies
-								Expected Result:
-								The user is transferred to the logout page, then to the login page
-								The cookies are cleared
+								Test 5: Navigate to user.php with invalid cookies<br>
+								Expected Result:<br>
+								The user is transferred to the logout page, then to the login page<br>
+								The cookies are cleared<br>
+								Initial Date Passed: 8th Jan<br> <br>
 								
-								Test 6: Navigate to editor.php with invalid cookies
-								Expected Results:
-								The user is transferred to the logout page, then to the login page
-								The cookies are cleared
+								Test 6: Navigate to editor.php with invalid cookies<br>
+								Expected Results:<br>
+								The user is transferred to the logout page, then to the login page<br>
+								The cookies are cleared<br>
+								Initial Date Passed: 8th Jan<br> <br>
 								
-								Test 7: Navigate to user.php with valid cookies
-								Expected Results:
-								Cookies are refreshed
-								Session key cookie is changed
-								Session key in users.json is changed
+								Test 7: Navigate to user.php with valid cookies<br>
+								Expected Results:<br>
+								Cookies are refreshed<br>
+								Session key cookie is changed<br>
+								Session key in users.json is changed<br>
+								Initial Date Passed: 23rd Mar -> had to be retested as we added passcodes after first prototype<br> <br>
 								
-								Test 8: Navigate to editor.php with valid cookies
-								Expected Results:
-								Cookies are refreshed
-								Session key cookie is changed
-								Session key in users.json is changed
+								Test 8: Navigate to editor.php with valid cookies<br>
+								Expected Results:<br>
+								Cookies are refreshed<br>
+								Session key cookie is changed<br>
+								Session key in users.json is changed<br>
+								Initial Date Passed: 15th Jan<br> <br>
 								
-								Test 9: Navigate to logout.php with valid cookies
-								Expected Results:
-								The user is transferred to the login page
-								The cookies are cleared
+								Test 9: Navigate to logout.php with valid cookies<br>
+								Expected Results:<br>
+								The user is transferred to the login page<br>
+								The cookies are cleared<br>
+								Initial Date Passed: 15th Jan<br> <br>
 								
-								Test 10: Navigate to logout.php with invalid cookies
-								Expected Results:
-								The user is transferred to the login page
-								The cookies are cleared
+								Test 10: Navigate to logout.php with invalid cookies<br>
+								Expected Results:<br>
+								The user is transferred to the login page<br>
+								The cookies are cleared<br>
+								Initial Date Passed: 15th Jan<br> <br>
 								
-								Test 11: Navigate to logout.php with no cookies
-								Expected Results:
-								The user is transferred to the login page
+								Test 11: Navigate to logout.php with no cookies<br>
+								Expected Results:<br>
+								The user is transferred to the login page<br>
+								Initial Date Passed: 15th Jan<br> <br>
 								
-								Test 12: Create a new world on user.php
-								Expected Results:
-								New world appears on page
-								New world is added to users.json under the specified user ID
-								New world .json file created in worlds folder
-								New world folder created in Theater folder
+								Test 12: Create a new world on user.php<br>
+								Expected Results:<br>
+								New world appears on page<br>
+								New world is added to users.json under the specified user ID<br>
+								New world .json file created in worlds folder<br>
+								New world folder created in Theater folder<br>
+								Initial Date Passed: 20th Apr -> passed after editing user.php<br> <br>
 								
-								Test 13: Edit metadata for a world on user.php
-								Expected Results:
-								The world .json file is updated, no unchanged information is lost
+								Test 13: Edit metadata for a world on user.php<br>
+								Expected Results:<br>
+								The world .json file is updated, no unchanged information is lost<br>
+								Initial Date Passed: 20th Apr -> passed after editing user.php<br> <br>
 								
-								Test 14: Share world on user.php to an invalid email ID
-								Expected Results:
-								Nothing Happens (Check sendmail log)
+								Test 14: Share world on user.php to an invalid email ID<br>
+								Expected Results:<br>
+								Nothing Happens (Check sendmail log)<br>
+								Initial Date Passed: 20th Apr<br> <br>
 								
-								Test 15: Share world to a valid email ID
-								Expected Results:
-								Email received at specified email ID
+								Test 15: Share world to a valid email ID<br>
+								Expected Results:<br>
+								Email received at specified email ID<br>
+								Initial Date Passed: 20th Apr<br> <br>
 								
-								Test 16: Share world to more than 20 email IDs
-								Expected Results:
-								Email received at first 20
+								Test 16: Share world to more than 20 email IDs<br>
+								Expected Results:<br>
+								Email received at first 20<br>
+								Initial Date Passed: 20th Apr<br> <br>
 								
-								Test 17: Enter a mix of valid and invalid email IDs into the share world field, click share.
-								Expected Results:
-								Only the email addresses have emails sent to them. (check sendmail log)
+								Test 17: Enter a mix of valid and invalid email IDs into the share world field, click share.<br>
+								Expected Results:<br>
+								Only the email addresses have emails sent to them. (check sendmail log)<br>
+								Initial Date Passed: 20th Apr<br> <br>
 								
+								Test 18: delete a world<br>
+								Expected Results:<br>
+								The world is removed from users.json<br>
+								The world .json is removed from worlds folder<br>
+								The world directory removed from the Theater folder<br>
+								Initial Date Passed: 23rd Mar -> retested after moving to 3D editor<br> <br>
 								
-								Test 18: delete a world
-								Expected Results:
-								The world is removed from users.json
-								The world .json is removed from worlds folder
-								The world directory removed from the Theater folder
+								Test 19: select the edit world feature<br>
+								Expected Results:<br>
+								User is taken to editor.php<br>
+								Specified world loads (place a specific uploaded model in a recognizable position beforehand to confirm)<br>
+								Portal frame is present at the middle of the far left edge of the grid.<br>
+								Initial Date Passed: 23rd Mar<br> <br>
 								
-								Test 19: select the edit world feature
-								Expected Results:
-								User is taken to editor.php
-								Specified world loads (place a specific uploaded model in a recognizable position beforehand to confirm)
-								Portal frame is present at the middle of the far left edge of the grid.
+								Test 20: edit the world and exit without selecting save<br>
+								Expected Results:<br>
+								Nothing happens.<br>
+								Initial Date Passed: 23rd Mar<br> <br>
 								
-								Test 20: edit the world and exit without selecting save
-								Expected Results:
-								Nothing happens.
+								Test 21: edit the world and save<br>
+								Expected Results:<br>
+								The world .json file should be updated.<br>
+								Initial Date Passed: 23rd Mar<br> <br>
 								
-								Test 21: edit the world and save
-								Expected Results:
-								The world .json file should be updated.
+								Test 22: upload a new .fbx file<br>
+								Expected Results:<br>
+								The file should be added to the folder in the Theater folder.<br>
+								The Assetbundler program should have been run. (make sure to clear previous asset bundle to confirm, also, check if a .meta file has been created for the new .fbx)<br>
+								Initial Date Passed: 18th Mar -> failed in first prototype hence we moved to 3D editor<br> <br>
+
+								Test 23: load a .fbx file from the default selection<br>
+								Expected Results:<br>
+								The model should be placed at the center of the grid, facing away from the portal.<br>
+								Initial Date Passed: 18th Mar<br> <br>
 								
-								Test 22: upload a new .fbx file
-								Expected Results:
-								The file should be added to the folder in the Theater folder.
-								The Assetbundler program should have been run. (make sure to clear previous asset bundle to confirm, also, check if a .meta file has been created for the new .fbx)
+								Test 24: load a .fbx file from the uploaded selection<br>
+								Expected Results:<br>
+								The model should be placed at the center of the grid, facing away from the portal.<br>
+								Initial Date Passed: 18th Mar<br> <br>
 								
-								Test 23: load a .fbx file from the default selection
-								Expected Results:
-								The model should be placed at the center of the grid, facing away from the portal.
+								Test 25: move, rotate and scale an object in all three dimensions, then click save<br>
+								Expected Results:<br>
+								The world .json file should have new values in all the x,y,z fields.<br>
+								Initial Date Passed: 20th Apr<br> <br>
 								
-								Test 24: load a .fbx file from the uploaded selection
-								Expected Results:
-								The model should be placed at the center of the grid, facing away from the portal.
-								
-								Test 25: move, rotate and scale an object in all three dimensions, then click save
-								Expected Results:
-								The world .json file should have new values in all the x,y,z fields.
-								
-								Test 26: load the world in the mobile app
-								Expected Results:
-								The world should appear as designed on the web-application.
+								Test 26: load the world in the mobile app<br>
+								Expected Results:<br>
+								The world should appear as designed on the web-application.<br>
+								Initial Date Passed: 20th Apr<br> <br>
 								
 								All tests passed as of 20th April 2019
 								
-                            ▪ Testing Strategy
-                            ▪ Unit and integration testing
-                            ▪ Compatibility testing (if applicable)
-                            ▪ Responsive design testing (if applicable)
-                            ▪ Performance/stress testing (if applicable)
-                            ▪ Security testing (if applicable）
-                            ▪ Automated testing (highly recommended for higher
-                            marks)
-                            ▪ User acceptance testing — Testers
-                            — Test cases — Feedback from testers and client
 						</p>
 					</div>
 				</div>
@@ -231,11 +249,13 @@
 
 		<section class="about-generic-area pb-10 ">
 			<div class="container border-top-generic section-gap">
-				<h3 class="about-title mb-30">Test Cases</h3>
+				<h3 class="about-title mb-30">User Acceptance</h3>
 				<div class="row">
 					<div class="col-lg-12">
 						<p>
-                        
+						Feedback from our testers was generally positive, such as the improved user interface as well as the intuitive process of creating
+						and customising rooms. We have yet to show the final product to our client but they were pleased with our prototype in March. 
+						We plan to showcase the final product soon.
 						</p>
 					</div>
 				</div>
