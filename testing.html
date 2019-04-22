@@ -79,10 +79,139 @@
 		<!-- Start  Area -->
 		<section class="about-generic-area pb-10 ">
 			<div class="container border-top-generic section-gap">
-				<h3 class="about-title mb-30">Susddfsd</h3>
+				<h3 class="about-title mb-30">Tests</h3>
 				<div class="row">
 					<div class="col-lg-12">
 						<p>
+								Test 1: Enter valid username and password, click submit.
+								Expected Result: 
+								The user is taken to the user page
+								User ID cookie created
+								Session key cookie created
+								Session key in users.json is updated
+								
+								Test 2: Enter invalid username and password
+								Expected Result:
+								The user remains on the same page
+								User ID cookie not created
+								Session key cookie not created
+								users.json unchanged
+								
+								Test 3: Navigate to user.php while not logged in
+								Expected Result:
+								The user is transferred to the logout page, then to the login page
+								
+								Test 4: Navigate to editor.php while not logged in
+								Expected Result:
+								The user is transferred to the logout page, then to the login page
+								
+								Test 5: Navigate to user.php with invalid cookies
+								Expected Result:
+								The user is transferred to the logout page, then to the login page
+								The cookies are cleared
+								
+								Test 6: Navigate to editor.php with invalid cookies
+								Expected Results:
+								The user is transferred to the logout page, then to the login page
+								The cookies are cleared
+								
+								Test 7: Navigate to user.php with valid cookies
+								Expected Results:
+								Cookies are refreshed
+								Session key cookie is changed
+								Session key in users.json is changed
+								
+								Test 8: Navigate to editor.php with valid cookies
+								Expected Results:
+								Cookies are refreshed
+								Session key cookie is changed
+								Session key in users.json is changed
+								
+								Test 9: Navigate to logout.php with valid cookies
+								Expected Results:
+								The user is transferred to the login page
+								The cookies are cleared
+								
+								Test 10: Navigate to logout.php with invalid cookies
+								Expected Results:
+								The user is transferred to the login page
+								The cookies are cleared
+								
+								Test 11: Navigate to logout.php with no cookies
+								Expected Results:
+								The user is transferred to the login page
+								
+								Test 12: Create a new world on user.php
+								Expected Results:
+								New world appears on page
+								New world is added to users.json under the specified user ID
+								New world .json file created in worlds folder
+								New world folder created in Theater folder
+								
+								Test 13: Edit metadata for a world on user.php
+								Expected Results:
+								The world .json file is updated, no unchanged information is lost
+								
+								Test 14: Share world on user.php to an invalid email ID
+								Expected Results:
+								Nothing Happens (Check sendmail log)
+								
+								Test 15: Share world to a valid email ID
+								Expected Results:
+								Email received at specified email ID
+								
+								Test 16: Share world to more than 20 email IDs
+								Expected Results:
+								Email received at first 20
+								
+								Test 17: Enter a mix of valid and invalid email IDs into the share world field, click share.
+								Expected Results:
+								Only the email addresses have emails sent to them. (check sendmail log)
+								
+								
+								Test 18: delete a world
+								Expected Results:
+								The world is removed from users.json
+								The world .json is removed from worlds folder
+								The world directory removed from the Theater folder
+								
+								Test 19: select the edit world feature
+								Expected Results:
+								User is taken to editor.php
+								Specified world loads (place a specific uploaded model in a recognizable position beforehand to confirm)
+								Portal frame is present at the middle of the far left edge of the grid.
+								
+								Test 20: edit the world and exit without selecting save
+								Expected Results:
+								Nothing happens.
+								
+								Test 21: edit the world and save
+								Expected Results:
+								The world .json file should be updated.
+								
+								Test 22: upload a new .fbx file
+								Expected Results:
+								The file should be added to the folder in the Theater folder.
+								The Assetbundler program should have been run. (make sure to clear previous asset bundle to confirm, also, check if a .meta file has been created for the new .fbx)
+								
+								Test 23: load a .fbx file from the default selection
+								Expected Results:
+								The model should be placed at the center of the grid, facing away from the portal.
+								
+								Test 24: load a .fbx file from the uploaded selection
+								Expected Results:
+								The model should be placed at the center of the grid, facing away from the portal.
+								
+								Test 25: move, rotate and scale an object in all three dimensions, then click save
+								Expected Results:
+								The world .json file should have new values in all the x,y,z fields.
+								
+								Test 26: load the world in the mobile app
+								Expected Results:
+								The world should appear as designed on the web-application.
+								
+								All tests passed as of 20th April 2019
+								
                             ▪ Testing Strategy
                             ▪ Unit and integration testing
                             ▪ Compatibility testing (if applicable)
@@ -102,7 +231,7 @@
 
 		<section class="about-generic-area pb-10 ">
 			<div class="container border-top-generic section-gap">
-				<h3 class="about-title mb-30">Critical Evaluation</h3>
+				<h3 class="about-title mb-30">Test Cases</h3>
 				<div class="row">
 					<div class="col-lg-12">
 						<p>
