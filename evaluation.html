@@ -178,6 +178,7 @@
 									</div>
 								</div>
 						</div>
+					</div>
 				
 						</p>
 						<div class="section-top-border">
@@ -210,6 +211,7 @@
 					</div>
 				</div>
 			</div>
+		</section>
 
 
 		<section class="blog-area pb-100" id="blog">
@@ -315,20 +317,30 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<p>
-						 Critical evaluation of the project<br>
 						 
 							— User interface / user experience (if applicable)<br>
-							Though we finished all the must/should have requirements, the user interface of the web application could be further
-						 improved. <br><br>
+							The UI is functional but somewhat basic. With the majority of the effort put towards functionality after the initial difficulties, the user interface is easy to use but has obvious short-cuts such as the controls tab on the editor.
+Furthermore, the email sent is in plaintext, instead of something simpler and more convenient. A deep-link, allowing the application to automatically read the data passed along rather than having to manually copy over the world ID.
+Beyond that, however, the product is intuitive to use and does not have much in the way of challenges when it comes to learning how to operate either platform.
+<br><br>
 							— Functionality<br>
+							The overall functionality of the application is quite robust as we've completed all the must/should have requirements, but there are certain aspects where it is limited. For example, the file-types that can be utilised is fairly small, due to the library used only supporting models post 7400. Furthermore, the uploaded models also don’t take into account external texture images, which results in grey, simple models in some cases. This can be addressed by using .fbx files with integrated textures, but this is not the optimal solution.<br><br>
 							— Stability<br>
+							The application as a whole is quite stable, suffering only minor issues when changes are made to the underlying functionality of the code. Some improvements can be made, including an archiving system to preserve information in the case of the database files being disturbed.
+							<br><br>
 							— Efficiency<br>
+							The system has, to an extent traded efficiency for ease of deployment. Instead of a simplified database system such as an SQL database, it uses a series of locally stored .json files. This allows for a much simpler deployment phase but increases the relative complexity in the long term.
+							<br><br>
 							— Compatibility<br>
+							The web application has been intentionally designed with the requirements of the NHS equipment in mind and runs a relatively lightweight system in response. As such, it can be run on any desktop system and even on a wide range of modern mobile devices.<br>
+
 						Our app is designed only for Android smartphones that supports Google ARcore. Whilst there are no plans to create
 						an iOS version, this could be something to think about in the future, as many people use iPhones and iPads. Our client 
 						had specified Android compatibility hence we didn't explore the iOS option.<br><br>
 							— Maintainability<br>
-							— Project management<br>
+							The application as a whole is relatively easy to maintain, either using specifically designed, low-maintenance code where possible and easily updated libraries for interaction with external components, such as file formats or external services. However, there are issues. The system references 360 videos hosted on on the video sharing platform YouTube, which recently altered the way it stores its metadata. However, this broke the plugin used by the mobile app to access the 360 videos stored this way. A temporary fix was applied, but once the plugin is updated, the maintenance should be a simple enough process.
+<br><br>
+							
 						</p>
 					</div>
 				</div>
@@ -372,7 +384,7 @@
 	</footer>
 	<!-- End footer Area -->
 
-	
+				</div>
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
